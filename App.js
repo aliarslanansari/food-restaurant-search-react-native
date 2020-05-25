@@ -1,19 +1,31 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {createStackNavigator} from "react-navigation-stack"
+import {createAppContainer} from 'react-navigation';
+import SearchScreen from "./src/screens/SearchScreen"
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
-}
+const navigator = createStackNavigator({
+  Search:SearchScreen,
+  },{
+    initialRouteName: "Search",
+    defaultNavigationOptions:{
+      title: 'Business Search'
+    }
+  }
+);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default createAppContainer(navigator);
+
+
+
+  // npm install @react-navigation/native @react-navigation/stack
+
+  // expo install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+
+
+  // npm install --save react-navigation
+
+  // expo install react-native-gesture-handler react-native-reanimated react-navigation-stack
+
+  // expo install react-native-safe-area-view react-native-safe-area-context
+
+  // expo install @react-native-community/masked-view
