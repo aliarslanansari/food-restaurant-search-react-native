@@ -20,11 +20,12 @@ const SearchBar = ({term,onTermChange,onTermSubmit}) =>{
 const styles = StyleSheet.create({
     backgroundStyle:{
         marginTop:15,
-        backgroundColor:'#f0eeee', 
+        backgroundColor:'#f0e0e0', 
         height:50,
         borderRadius:5,
         marginHorizontal:15,
         flexDirection:"row",
+        marginBottom:10,
     },
     inputStyle:{
         flex:1,
