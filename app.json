@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "food",
-    "slug": "food",
+    "name": "food-restaurant-search",
+    "slug": "food-restaurant-search",
     "platforms": [
       "ios",
       "android",
@@ -24,9 +24,10 @@
     "ios": {
       "supportsTablet": true
     },
-	
     "android": {
-    "package": "com.food.zomatoali"
-  }
+      "package": "com.food.zomatoali"
+    },
+    "description": "Food or Restaurant search app, which fetches data from Zomato API, and displays the result.",
+    "githubUrl": "https://github.com/aliarslanansari/food-restaurant-search-react-native"
   }
 }
